@@ -1,8 +1,132 @@
 /* Custom styles to complement Tailwind with feminine colors */
+:root {
+    --bg-body: #FFF1F3; /* Soft pink */
+    --bg-nav: #FFFFFF;
+    --text-primary: #4B0082; /* Purple-900 */
+    --text-secondary: #6B7280; /* Purple-800 */
+    --accent: #db2777; /* Pink-700 */
+    --accent-hover: #be185d; /* Pink-800 */
+    --card-bg: #FDF2F8; /* Pink-50 */
+    --border: #EDE9FE; /* Purple-200 */
+    --gradient-color-bg: linear-gradient(90deg, #FECDD3, #EDE9FE, #FECDD3); /* Pink-200 to Purple-200 */
+}
+
+body.dark {
+    --bg-body: #1F2937; /* Gray-800 */
+    --bg-nav: #111827; /* Gray-900 */
+    --text-primary: #E9D5FF; /* Purple-200 */
+    --text-secondary: #D8B4FE; /* Purple-300 */
+    --accent: #f472b6; /* Pink-400 */
+    --accent-hover: #ec4899; /* Pink-500 */
+    --card-bg: #374151; /* Gray-700 */
+    --border: #A78BFA; /* Purple-600 */
+    --gradient-color-bg: linear-gradient(90deg, #4B5563, #D8B4FE, #4B5563); /* Gray-600 to Purple-300 */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
-    background-color: #FFF1F3; /* Soft pink background */
+    background-color: var(--bg-body);
+    color: var(--text-secondary);
+}
+
+nav {
+    background-color: var(--bg-nav);
+}
+
+section#home {
+    background: linear-gradient(to right, #FECDD3, #EDE9FE);
+}
+
+body.dark section#home {
+    background: linear-gradient(to right, #4B5563, #1F2937);
+}
+
+section#service {
+    background-color: var(--bg-nav);
+}
+
+body.dark section#service {
+    background-color: var(--bg-nav);
+}
+
+section#work {
+    background-color: var(--card-bg);
+}
+
+body.dark section#work {
+    background-color: var(--bg-body);
+}
+
+section#contact {
+    background: linear-gradient(to right, #FECDD3, #EDE9FE);
+}
+
+body.dark section#contact {
+    background: linear-gradient(to right, #4B5563, #1F2937);
+}
+
+.service-card, .work-item {
+    background-color: var(--card-bg);
+    transition: all 0.3s ease;
+}
+
+.service-card.hidden, .work-item.hidden {
+    display: none;
+}
+
+.filter-btn {
+    background-color: var(--bg-nav);
+    color: var(--text-secondary);
+    border-color: var(--border);
+}
+
+.filter-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.filter-btn.active {
+    background-color: var(--accent) !important;
+    color: #ffffff !important;
+}
+
+body.dark .filter-btn {
+    background-color: var(--card-bg);
+    color: var(--text-secondary);
+    border-color: var(--border);
+}
+
+body.dark .filter-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+body.dark .filter-btn.active {
+    background-color: var(--accent) !important;
+    color: #ffffff !important;
+}
+
+form#contact-form {
+    background-color: var(--bg-nav);
+}
+
+body.dark form#contact-form {
+    background-color: var(--card-bg);
+}
+
+input, textarea {
+    background-color: var(--bg-nav);
+    color: var(--text-secondary);
+    border-color: var(--border);
+}
+
+body.dark input, body.dark textarea {
+    background-color: #4B5563;
+    color: #ffffff;
+    border-color: var(--border);
+}
+
+hr {
+    border-color: var(--border);
 }
 
 #nav-menu.active {
@@ -12,7 +136,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    background: #FFFFFF; /* White background for mobile menu */
+    background: var(--bg-nav);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
 }
@@ -29,13 +153,107 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px;
 }
 
 section {
     transition: opacity 0.5s ease-in-out;
 }
 
+section.visible {
+    opacity: 1;
+}
+
+section:not(.visible) {
+    opacity: 0;
+}
+
 button, a {
     transition: all 0.3s ease;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#scroll-top.show {
+    opacity: 1;
+}
+
+/* Animation for "Hi, I'm Tshepiso Msiza" */
+.text-animate {
+    position: relative;
+    width: fit-content; /* Adjust to content size for responsiveness */
+    opacity: 0; /* Start hidden */
+}
+
+section.visible .text-animate {
+    opacity: 1; /* Show when section is visible */
+}
+
+.text-animate h1 {
+    font-size: 2.25rem; /* Match Tailwind text-4xl */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: transparent;
+    -webkit-text-stroke: 0.05rem var(--text-primary); /* Purple stroke */
+    text-stroke: 0.05rem var(--text-primary); /* Standard property for broader support */
+    background: var(--gradient-color-bg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 0.6s ease;
+    letter-spacing: 2px;
+    animation: moveText 4s linear infinite; /* Loop infinitely */
+}
+
+.text-animate h1 span {
+    -webkit-text-stroke: 0.05rem var(--accent); /* Pink stroke for "Tshepiso Msiza" */
+    text-stroke: 0.05rem var(--accent);
+}
+
+.text-animate h1::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: -0.2rem;
+    width: 0;
+    height: 70%;
+    border-right: 2px solid var(--accent); /* Pink cursor */
+    animation: moveCursorText 4s linear infinite; /* Loop infinitely */
+}
+
+@keyframes moveText {
+    0% { background-position: 0 0; }
+    100% { background-position: 200% 0; }
+}
+
+@keyframes moveCursorText {
+    0% { width: 0; opacity: 1; }
+    50% { width: 100%; opacity: 1; }
+    75% { width: 100%; opacity: 0; } /* Blink effect */
+    100% { width: 0; opacity: 0; }
+}
+
+/* Disable animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .text-animate h1, .text-animate h1::before {
+        animation: none;
+        color: var(--text-primary); /* Fallback to solid color */
+        -webkit-text-stroke: none;
+        text-stroke: none;
+        background: none;
+        border-right: none;
+    }
+    .text-animate h1 span {
+        color: var(--accent);
+        -webkit-text-stroke: none;
+        text-stroke: none;
+    }
 }
