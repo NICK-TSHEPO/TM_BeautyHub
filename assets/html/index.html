@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tshepi House of Beauty offers professional nail, hair, lash, and wig services in Marble Hall. Book your appointment today!">
+    <meta name="keywords" content="beauty services, nails, hair, lashes, wigs, Marble Hall">
+    <meta name="author" content="Tshepiso Msiza">
+    <title>Tshepi's House of Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-pink-50">
+    <!-- Navigation -->
+    <nav id="nav" class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-pink-700">Tshepi House of Beauty</a>
+            <button id="menu-toggle" class="md:hidden text-pink-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-purple-800 hover:text-pink-700 transition duration-300">Home</a></li>
+                <li><a href="#service" class="text-purple-800 hover:text-pink-700 transition duration-300">Services</a></li>
+                <li><a href="#work" class="text-purple-800 hover:text-pink-700 transition duration-300">Work</a></li>
+                <li><a href="#contact" class="text-purple-800 hover:text-pink-700 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-r from-pink-200 to-purple-200">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <img src="../../images/pic.jpg" alt="Tshepiso Msiza" class="w-full rounded-lg shadow-lg object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-purple-900 mb-4">Hi, I'm <span class="text-pink-700">Tshepiso Msiza</span></h1>
+                    <p class="text-lg text-purple-800 mb-6">Get your <strong>nails</strong>, <strong>hair</strong>, <strong>lashes</strong>, and <strong>wigs</strong> looking fresh! Quality beauty services to keep you glowing. Check out my <strong>work</strong>, see what <strong>clients</strong> say, and <strong>book</strong> your appointment today!</p>
+                    <a href="#work" class="bg-pink-700 text-white px-6 py-3 rounded-full hover:bg-pink-800 transition duration-300">Learn More About What I Do</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <header class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-purple-900">My Beauty Services</h2>
+                <p class="text-lg text-purple-800 mt-4">From nails to wigs, I offer professional services to keep you looking fresh, elegant, and confident.</p>
+            </header>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-hand-sparkles text-4xl text-pink-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-purple-900">Nails</h3>
+                    <p class="text-purple-800">Gel, acrylic, or manicure long-lasting and stylish.</p>
+                    <p class="text-pink-700 font-bold mt-2">From R150</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-cut text-4xl text-pink-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-purple-900">Hair</h3>
+                    <p class="text-purple-800">Braids, relaxers, treatments, and styling for all occasions.</p>
+                    <p class="text-pink-700 font-bold mt-2">From R250</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-eye text-4xl text-pink-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-purple-900">Lashes</h3>
+                    <p class="text-purple-800">Full, fluffy, and natural lash extensions.</p>
+                    <p class="text-pink-700 font-bold mt-2">From R200</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <i class="fas fa-user-alt text-4xl text-pink-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-purple-900">Wigs</h3>
+                    <p class="text-purple-800">Buy, wash, or install high quality wigs that suit your style.</p>
+                    <p class="text-pink-700 font-bold mt-2">From R500</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#work" class="bg-pink-700 text-white px-6 py-3 rounded-full hover:bg-pink-800 transition duration-300">See My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-16 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <header class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-purple-900">My Recent Work</h2>
+                <p class="text-lg text-purple-800 mt-4">Real client transformations, browse styles with prices & reviews.</p>
+            </header>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/gel_nail.jpg" alt="Gel Nails" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Gel Nails - R200</h3>
+                        <p class="text-purple-800 mt-2">"So neat and clean. I always leave feeling brand new!"<br><em>- Portia M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/acrylic_nails.jpg" alt="Acrylic Nails" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Acrylic Nails - R250</h3>
+                        <p class="text-purple-800 mt-2">"The shape and colour are always perfect. Compliments everywhere!"<br><em>- Zanele M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/French-tip.jpg" alt="French Tips" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">French Tips - R220</h3>
+                        <p class="text-purple-800 mt-2">"Classy and elegant! Perfect for work and weekends."<br><em>- Nthabiseng M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/Classic_Lash.webp" alt="Classic Lashes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Classic Lashes - R300</h3>
+                        <p class="text-purple-800 mt-2">"Natural but beautiful. I don't even wear mascara anymore!"<br><em>- Lerato K.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/Volume_Eyelash.webp" alt="Volume Lashes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Volume Lashes - R350</h3>
+                        <p class="text-purple-800 mt-2">"They're full and fluffy, just how I love them. Always on point!"<br><em>- Charlotte M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/hybrid.jpg" alt="Hybrid Lashes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Hybrid Lashes - R320</h3>
+                        <p class="text-purple-800 mt-2">"Best of both worlds! They really suit my eye shape."<br><em>- Kgaugelo S.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/cornrows.jpg" alt="Knotless Braids" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Knotless Braids - R600</h3>
+                        <p class="text-purple-800 mt-2">"Lightweight, neat, and stylish. I always feel fresh!"<br><em>- Mpho M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/box_braid.jpg" alt="Box Braids" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Box Braids - R700</h3>
+                        <p class="text-purple-800 mt-2">"Great for protective styling and looks so neat."<br><em>- Naledi T.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/washed_wig.jpg" alt="Relaxing & Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Relaxing & Treatment - R350</h3>
+                        <p class="text-purple-800 mt-2">"My hair has never felt this soft and healthy. 10/10!"<br><em>- Palesa A.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/straight_lace_wig.jpg" alt="Straight Lace Wig" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Straight Lace Wig - R1200</h3>
+                        <p class="text-purple-800 mt-2">"It melts perfectly and looks so natural. I love it!"<br><em>- Mbali M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/curly_wig1.jpg" alt="Curly Wig" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Curly Wig - R1000</h3>
+                        <p class="text-purple-800 mt-2">"Super easy to maintain and gives me that glam look!"<br><em>- Thandi M.</em></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="../../images/wash_installation.webp" alt="Wigs Wash & Install" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-purple-900">Wigs Wash & Install - R400</h3>
+                        <p class="text-purple-800 mt-2">"My old wig came back to life! The install is flawless."<br><em>- Precious D.</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-pink-700 text-white px-6 py-3 rounded-full hover:bg-pink-800 transition duration-300">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-pink-200 to-purple-200">
+        <div class="container mx-auto px-4">
+            <header class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-purple-900">Have Me Make You Beautiful</h2>
+            </header>
+            <div class="max-w-2xl mx-auto">
+                <div id="contact-form" class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <input type="text" id="name" placeholder="Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700">
+                        <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700">
+                    </div>
+                    <input type="text" id="subject" placeholder="Subject" class="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-700">
+                    <textarea id="message" placeholder="Message" class="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-700 h-32"></textarea>
+                    <div class="flex space-x-4">
+                        <button id="submit-btn" class="bg-pink-700 text-white px-6 py-3 rounded-full hover:bg-pink-800 transition duration-300">Send Message</button>
+                        <button id="reset-btn" class="bg-purple-200 text-purple-900 px-6 py-3 rounded-full hover:bg-purple-300 transition duration-300">Clear Form</button>
+                    </div>
+                </div>
+                <hr class="my-8 border-purple-300">
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-purple-900 mb-4">Find Me On</h3>
+                    <ul class="flex justify-center space-x-6 mb-6">
+                        <li><a href="#" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-x"></i></a></li>
+                        <li><a href="#" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mailto:information@gmail.com" class="text-pink-700 hover:text-pink-800 text-2xl"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                    <p class="text-purple-800">123 Matlerekeng<br>Marble Hall, 0450<br>(063) 388-9865 | (066) 051-9960</p>
+                </div>
+            </div>
+            <footer class="text-center mt-12">
+                <ul class="text-purple-800">
+                    <li>&copy; 2025. All rights reserved.</li>
+                    <li>Design: <strong>Nick Enterprise</strong></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
